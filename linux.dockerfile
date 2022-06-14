@@ -7,6 +7,6 @@ RUN apk update && \
     apk upgrade && \
     pip install --no-cache-dir requests argparse
 
-COPY script/jira-release.py /jira-release.py
+COPY script/jira-release-notes.py /jira-release-notes.py
 
-ENTRYPOINT ["python", "/jira-release.py"]
+ENTRYPOINT ["python", "/jira-release-notes.py"]
